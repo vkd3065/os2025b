@@ -2,13 +2,18 @@ package main
 
 import (
 	"fmt"
-	"math"
-	"strings"
+	"reflect"
 )
 
 func main() {
-	fmt.Println(math.Round(2.91))
-	fmt.Println(strings.Title("go developer~"))
-	fmt.Println("Kim\nInha\t\"\\") // c like
-	fmt.Println('A', '가')
+	//var name string
+	//var id int
+
+	//name = "Kim Inha"
+	//id = 1000
+
+	name := "Kim Inha"
+	id := 1000
+	fmt.Println(name, reflect.TypeOf(name))
+	fmt.Println(id, reflect.TypeOf(id))
 }
