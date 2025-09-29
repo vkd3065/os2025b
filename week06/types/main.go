@@ -6,14 +6,16 @@ import (
 )
 
 func main() {
-	//var name string
-	//var id int
+	// zero values
+	var f64 float64
+	var i16 int16
+	var t bool
+	var s string
+	var i int
 
-	//name = "Kim Inha"
-	//id = 1000
-
-	name := "Kim Inha"
-	id := 1000
-	fmt.Println(name, reflect.TypeOf(name))
-	fmt.Println(id, reflect.TypeOf(id))
+	fmt.Println(f64, reflect.TypeOf(f64))
+	fmt.Println(i16, reflect.TypeOf(i16))
+	fmt.Println(t, reflect.TypeOf(t))
+	fmt.Println(s, reflect.TypeOf(s))
+	fmt.Println(i, reflect.TypeOf(i))
 }
