@@ -3,11 +3,14 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 )
 
 func main() {
 	r := bufio.NewReader(os.Stdin)
-	i, _ := r.ReadString('\n') // ignore error
+	i, err := r.ReadString('\n')
+	//fmt.Println(err)
+	log.Fatal(err) // report the error, exit the program
 	fmt.Println(i)
 }
